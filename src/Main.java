@@ -1,6 +1,10 @@
 public class Main {
-    public static void Main(String[] args)
+    public static void main(String[] args)
     {
-        System.out.print("Hello, world");
+        Cube cube = new Cube(3);
+        System.out.println("Объём куба равен " + cube.getVolume());
+
+        Pyramid pyramid = new Pyramid(3,4);
+        System.out.println("Объём пирамиды равен " + pyramid.getVolume());
     }
 }
