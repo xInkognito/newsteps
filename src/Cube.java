@@ -1,17 +1,13 @@
-public class Cube implements Shape{
-    public Cube(int plane)
-    {
-        setPlane(plane);
-    }
-    private int plane;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
-    public void setPlane(int plane){
-        this.plane = plane;
-    }
+@AllArgsConstructor
+public class Cube implements Shape {
+    @Getter
+    private int plane;
 
     @Override
     public int getVolume() {
-        int volume = this.plane*this.plane;
-        return volume;
+        return this.plane * this.plane;
     }
 }
